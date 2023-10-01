@@ -1,0 +1,21 @@
+{
+  "name": "postgres-connector-source",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "plugin.name": "pgoutput",
+    "database.hostname": "host",
+    "database.dbname": "dbname",
+    "database.port": "port",
+    "database.user": "username",
+    "database.password": "pass",
+    "database.history.kafka.bootstrap.servers": "localhost:9092",
+    "database.history.kafka.topic": "dbhistory.dbname",
+    "database.server.name": "dbname",
+    "database.sslmode": "require",
+    "table.include.list": "public.table1,public.table2",
+    "publication.autocreate.mode": "disabled",
+    "snapshot.mode": "never",
+    "topic.prefix": "dbz.api",
+    "time.precision.mode": "connect"
+  }
+}
