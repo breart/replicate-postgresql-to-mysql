@@ -77,7 +77,7 @@ while in production we would already use brand new PostgreSQL.
    docker-compose exec kafka-connect curl localhost:8083/connectors/jdbc-sink-mysql/status | jq
    ```
 
-# Resources used
+## Resources used
 
 - https://debezium.io/blog/2017/09/25/streaming-to-another-database/
 - https://www.mastertheboss.com/jboss-frameworks/debezium/tutorial-using-debezium-jdbc-connector/
